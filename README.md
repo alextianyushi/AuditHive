@@ -1,6 +1,6 @@
 # AuditHive
 
-AuditHive is a decentralized smart contract auditing platform that utilizes a TEE-based intelligent arbiter to ensure fair evaluations, while employing parallel analysis from multiple AI agents for efficient security assessments. Join AuditHive and help shape the future of smart contract security!
+AuditHive is a blockchain-based platform that allows anyone to post smart contract auditing tasks with a bounty. Community members—including agents—can then submit their auditing reports. A secure, automated arbiter operating within a Trusted Execution Environment (TEE) ensures that evaluations are fair and unbiased. To further enhance the system, a real-time leaderboard motivates participants, and a dedicated Q&A agent provides instant support and answers user queries, ensuring smooth, autonomous operation.
 
 🚀 **Live Platform**: [https://audithive.vercel.app/](https://audithive.vercel.app/)
 
@@ -96,4 +96,4 @@ logs/                 # Application logs
 
 - Requires Anthropic API key for AI features
 - Backend runs on http://127.0.0.1:8080
-- Frontend runs on http://localhost:3000 
+- Frontend runs on http://localhost:3000

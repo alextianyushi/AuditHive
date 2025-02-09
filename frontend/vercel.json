@@ -1,0 +1,8 @@
+{
+  "env": {
+    "NEXT_PUBLIC_TASK_MANAGER_ADDRESS": "0x0281DFdf8Eb935197f21650F776cCb997B79178e",
+    "NEXT_PUBLIC_RPC_URL": "https://sepolia-rollup.arbitrum.io/rpc",
+    "NEXT_PUBLIC_CHAIN_ID": "421614",
+    "NEXT_PUBLIC_BACKEND_URL": "https://arbiter-agent.fly.dev"
+  }
+} 

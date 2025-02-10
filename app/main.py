@@ -12,7 +12,8 @@ app = FastAPI(
     title="ArbiterAgent",
     description="An intelligent agent that arbitrates security findings by deduplicating similar issues and evaluating finding quality",
     version="1.0.0",
-    root_path=""  # Allow for proxy path handling
+    root_path="",  # Allow for proxy path handling
+    servers=[{"url": "http://0.0.0.0:8080"}]  # Set default server
 )
 
 # Add root endpoint
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     logger.info("Starting ArbiterAgent...")
     uvicorn.run(
         "app.main:app",
-        host="0.0.0.0",
+        host="0.0.0.0",  # Default host
         port=8080,
         reload=True,
         log_config=None,  # Use our own logging configuration

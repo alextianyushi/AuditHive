@@ -24,15 +24,16 @@ AuditHive is a blockchain-based platform that allows anyone to post smart contra
 # Create virtual environment
 python3 -m venv venv
 source venv/bin/activate  # Linux/macOS
+# For Windows use: .\venv\Scripts\activate
 
 # Install dependencies
-pip install fastapi uvicorn sqlalchemy python-dotenv anthropic retrying pydantic logging-handler
+pip install -r requirements.txt
 
 # Set up environment (add your Anthropic API key)
 echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
 
 # Start server
-uvicorn app.main:app --reload --port 8080
+python run.py
 ```
 
 ### Frontend Setup
@@ -90,10 +91,11 @@ app/                    # Backend service
 frontend/              # Web interface
 data/                 # Data storage
 logs/                 # Application logs
+run.py               # Backend startup script
 ```
 
 ## Notes
 
 - Requires Anthropic API key for AI features
-- Backend runs on http://127.0.0.1:8080
+- Backend runs on http://localhost:8080
 - Frontend runs on http://localhost:3000
